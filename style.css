@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bitcount+Single+Ink:wght@100..900&display=swap');
+
 :root{
 --picton-blue: #00a6fbff;
 --steel-blue: #0582caff;
 --lapis-lazuli: #006494ff;
 --prussian-blue: #003554ff
 }
+body{
+    background-color: var(--lapis-lazuli);
+    font-family: var(--texto); 
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+main{
+    margin: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+button{
+    font-family: var(--titulo);
+    background-color: var(--steel-blue);
+    color: orangered;
+
+
+
+}
+

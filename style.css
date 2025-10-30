@@ -1,31 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bitcount+Single+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
---picton-blue: #00a6fbff;
---steel-blue: #0582caff;
---lapis-lazuli: #006494ff;
---prussian-blue: #003554ff
+    --roxo: rgba(41, 4, 255, 0.473);
+    --roxofraco: rgb(175, 7, 241);
+    --roxoazulado: rgb(3, 74, 206);
+    --branco: rgb(241, 240, 247);
+    --titulo: "Bebas Neue", sans-serif;
+    --texto: "Raleway", sans-serif;
 }
 body{
-    background-color: var(--lapis-lazuli);
-    font-family: var(--texto); 
-margin: 0;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: center;
+    background-color: var(--roxoazulado);
+    font-family: var(--texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
-    margin: 20px;
+    margin-top: 20px;
     max-width: 90%;
     text-align: center;
 }
 button{
     font-family: var(--titulo);
-    background-color: var(--steel-blue);
-    color: orangered;
-
-
-
+    background-color: var(--roxo);
+    color: var(--roxofraco);
+    border: 2px solid var(--roxo);
+    padding: 20px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: var(--roxofraco);
+    color: var(--roxo);
+    transition: 0.5s;
 }
 
+.passo{
+    font-size: 24px;
+    display: none;
+}
+
+.passo.ativo{
+    display: block;
+}
